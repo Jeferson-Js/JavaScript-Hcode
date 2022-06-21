@@ -11,11 +11,12 @@ const validateInput = ({ target }) => {
   }
 };
 
-const handleSubmit = (event) =>{
-    event.preventDefault();
-    console.log("Ligando")
+const handleSubmit = (event) => {
+  event.preventDefault();
 
-}
+  localStorage.setItem("Player", input.value);
+  window.location = "pages/game.html";
+};
 
 input.addEventListener("input", validateInput);
 form.addEventListener("submit", handleSubmit);
