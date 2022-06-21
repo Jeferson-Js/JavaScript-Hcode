@@ -21,10 +21,9 @@ const loop = setInterval(() => {
 
     mario.style.animation = "none";
     marioPosition.style.bottom = `${marioPosition}px`;
-
-    mario.src = "marioLoser.png";
-
     clearInterval(loop);
+
+    
   }
 }, 10);
 
